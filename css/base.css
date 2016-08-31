@@ -1,0 +1,162 @@
+/*reset*/
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hr,blockquote,object,iframe,fieldset,input,legend,form,th,td{margin:0;padding:0}
+body,input,textarea,keygen,select,button,isindex{font: 14px/24px  "PMingLiU","微软雅黑",Arial,sans-serif; color:#666;word-break:break-all}
+ul,ol,li{list-style:none}
+img{border:none;display: block;}
+table,tr,th,td{margin:0;padding:0;border:0;}
+textarea{outline: none;}
+input{outline: none;}
+
+/*common*/
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+h1{font-size:24px}h2{font-size:20px}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{font-size:14px}
+i,b,em{font-style:normal;font-weight:normal}
+table{border-collapse:collapse;border-spacing:0; width:100%; background:#fff}
+td{padding:3px 5px;}
+th{font-weight:normal; background:#e7f4fe; height:40px}
+table,td,th{ border:1px solid #ddd}
+table caption{ font-size:16px; text-align:left; padding-bottom:10px}
+input{border:0;outline:none;}
+a{text-decoration:none;color:#333;}
+body{font-family: "微软雅黑","Georgia"}
+textarea{resize: none;}
+.inner{width:1200px;margin:0 auto;}
+.clearfix:after{content:"";display:block;clear:both;}
+.fl{float:left;display: block}
+.fr{float:right;display: block}
+.clearfix{*zoom:1;}
+.clear{clear:both;}
+html{font-size:62.5%;}
+/*引用文字*/
+/*
+@font-face {
+    font-family:"ziti1";
+    src: url("../font/迷你简硬笔楷书.TTF");
+}
+@font-face {
+    font-family:"ziti2";
+    src: url("../font/造字工房刻宋(非商用)常规体.otf");
+}*/
+/*tabs样式*/
+#tabs .active{color:#64d7d1;}
+
+/*修改默认弹框样式*/
+.active .modal-backdrop-bg {opacity: 0.5;}
+.modal-backdrop-bg {
+ -webkit-transition: opacity 300ms ease-in-out;
+ transition: opacity 300ms ease-in-out;
+ background-color: #000;
+ opacity: 0;
+}
+
+/*tabs样式*/
+#tabs .active{color:#64d7d1;}
+
+/*修改默认弹框样式*/
+.active .modal-backdrop-bg {opacity: 0.5;}
+.modal-backdrop-bg {
+ -webkit-transition: opacity 300ms ease-in-out;
+ transition: opacity 300ms ease-in-out;
+ background-color: #000;
+ opacity: 0;
+}
+
+/*菜谱*/
+#menu .menu-list .item{border-bottom:2px solid #eee;}
+#menu .menu-list .item .cont{color:#666;}
+#menu .menu-list .item .cont h3{line-height:3rem;color:#666;font-weight: normal;font-size:16px;}
+#menu .menu-list .item .cont h5{color:#ccc;font-size:10px;letter-spacing:2px;}
+
+#menu .menucls a{position:absolute;left:1rem;top:2rem;color:#666;text-align: center;}
+
+ /*步骤*/
+#step .list{width:90%;margin:0 auto;}
+#step .step-css{color:#666;}
+#step .list img{width:100%;}
+#step .step-css p{line-height:3rem;font-size:1.6rem;}
+#step .stepcls a{position:absolute;left:1rem;top:2rem;text-align: center;color:#666;}
+
+/*find-hot*/
+.hot ion-content{background: #f5f5f5;margin-bottom:5rem;}
+.hot .title{font-size: 1.4rem;line-height:3rem;color:#000;padding-left:1.2rem;}
+.hot .list_item{margin-bottom:1.2rem;}
+.hot .list_item .item-avatar{border-bottom:none;min-height:4.7rem;height:4.7rem;padding-left:6rem;}
+.hot .list_item .item-avatar img{width:3rem;height:3rem;top:0.9rem;}
+.hot .list_item .item-avatar h2{float:left;font-size: 1.4rem}
+.hot .list_item .item-avatar p{float:right;font-size: 1.2rem}
+.hot .list_item .item-body{padding:0 1.2rem 1.2rem 1.2rem;border-top:none;}
+.hot .list_item .item-body p{margin-top:-3rem;color:#fff;margin-left:1.2rem;font-size: 1.4rem}
+
+/*find-subject*/
+.list{margin-bottom:0;padding-top:0;}
+.subject ion-content{background: #f5f5f5;margin-bottom:5rem;}
+.subject .list_item{margin-top:1.2rem;}
+.subject .list_item .item-avatar{position: relative;}
+.subject .list_item .head_tx{position: absolute;top:67%;left:78%;max-width:5.6rem;max-height:5.6rem;border:3px solid rgba(221,221,221,0.5);border-radius: 50%;}
+.subject .list_item .item-image{padding-bottom:1.2rem;}
+.subject .list_item h2{color:#ff5151;float:right;margin-top:3.2rem;padding-right:1.6rem;font-size: 1.4rem;}
+.subject .list_item p{font-size: 1.6rem;float:left;padding-left:1.2rem;color:#000;line-height:4rem;}
+
+/*find-article*/
+.article .tabs_img{padding-top:1.2rem;}
+.article .tabs_img .box,.article .tabs_img .box img{width:100%}
+.article .list_item .item{background: #f5f5f5}
+.article .list_item .item p{color:#ababab;font-family: "宋体";}
+
+/*find-subjectIn*/
+.header_h i{font-size: 2.5rem;padding-left:0.5rem;line-height:3.5rem;}
+.subjectIn .img li{width:100%;}
+.subjectIn .img li img{width:100%;display: block;margin-top:-0.1rem;}
+
+/*find-articleIn*/
+.articleIn ion-content{background: #f5f5f5}
+.articleIn_top{text-align: center;}
+.articleIn_top h2{font-size: 3rem;line-height:5rem;}
+.articleIn_top img{border-radius: 50%;width:6.4rem;height:6.4rem;}
+.articleIn_top span{color:#ff5151}
+.content-text{padding:0 1.2rem;font-size: 1.6rem;margin-bottom:2rem;}
+.content-text p{text-indent: 2em;}
+.content-text img{width:100%;}
+
+
+/*home-set-changePwd样式*/
+.changePwd .cont_bg{background: #f7f7f7;}
+.changePwd .cont_bg .list-inset .item:last-child{border-radius: 0.5rem;border:none;background: #fff;height:4.9rem;}
+.changePwd .cont_bg .list-inset .item:last-child input{margin-left:-3rem;}
+.changePwd .cont_bg .list-inset{margin:1.5rem 1.2rem;}
+.changePwd .cont_bg .list-inset .input-label{color:#606060;font-size: 1.7rem;}
+.changePwd .cont_bg .rulePwd{font-size: 1.4rem;margin-left:2.4rem;line-height:3.7rem;padding-bottom:0.4rem;}
+.changePwd .cont_bg .button.button-balanced{background: #19adb9;margin:0 1.6rem;border-radius: 2.8rem}
+.changePwd .cont_bg .newPwd{margin-bottom:0}
+.showPassword{float:right;}
+
+
+/*login样式*/
+.changePwd .cont_bg .button.button-balanced{margin-top:2.5rem;}
+.changePwd .cont_bg .forgetPwd{text-align: center;font-size: 1.4rem;line-height:6.6rem;}
+.changePwd .cont_bg .verify_name{font-size: 1.4rem;color:red;padding-right:10%}
+
+
+/*忘记密码*/
+.forgetPwd .badge-assertive{background: #19adb9;height:2.8rem;line-height:2rem;font-size: 1.2rem;font-weight: normal;top:1.2rem;right:0.6rem;border-radius: 1.2rem;}
+.forgetPwd .cont_bg .button.button-balanced{margin-top:6.3rem;}
+
+
+/*login2样式*/
+.login2 .login2_bg{width:100%;position: relative;}
+.login2 .login2_bg img{width:100%;display: block}
+.login2 .login2_bg .shade{position: absolute;top:0;left:0;width:100%;height:100%;background: rgba(0,0,0,0.7);}
+.login2 .login2_bg .login2_logo{width:7.3rem;height:7.3rem;margin:0 auto;}
+.login2 .login2_bg .login2_logo img{width:100%;height:100%;margin-top:11.2rem;}
+.login2 .login2_bg form{margin-top:5rem;}
+.login2 .login2_bg .form{position: relative}
+.login2 .login2_bg .password_box{margin-top:3rem;}
+.login2 .login2_bg .user{width:2.2rem;height:2.4rem;position: absolute;top:18%;left:8%;}
+.login2 .login2_bg .user img{width:100%;height:100%;display: block}
+.login2 .login2_bg .password{width:2rem;height:2.2rem;position: absolute;top:80%;left:8%;}
+.login2_text{background: none;margin-left:14%;margin-right:8%;}
+.login2_text .item-input{background: none;border:none;border-bottom:1px solid #79818c}
+.login2_text .item-input .input-label{color:#6e7681;font-size: 1.4rem;line-height:2rem;padding:14px 13px 0 0;}
+.login2_text .item-input .text{margin-left:-8rem;color:#fff;padding-top:1.3rem;}
+.login2 .login2_bg .button-full{margin:5.8rem 3.2rem 0;border-radius: 4rem;border:2px solid #21a4ae;background: none;}
+.login2 .login2_bg .forgetPwd{text-align: center;color:#6a6d74;line-height:3.7rem;}

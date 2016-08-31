@@ -1,0 +1,22 @@
+{
+  "hot":[
+    {"img1":"images/xiaomian.png","text":"自制重庆小面","price":"39.9","number":"1盒"},
+    {"img1":"images/guandongzhu.jpg","text":"煮出正宗关东煮的秘诀","price":"22.8","number":"70g*3"},
+    {"img1":"images/manyuemei.jpg","text":"零食&烘焙都hold住","price":"11","number":"100g"},
+    {"img1":"images/jianguo.jpg","text":"能补铁的高颜值煎锅","price":"39.5","number":"1个"}
+  ],
+  "like":[
+    {"img2":"images/yinhua.jpg","text":"#樱花#紫薯花生仁"},
+    {"img2":"images/niunai.jpg","text":"牛奶雪花膏"},
+    {"img2":"images/rishi.jpg","text":"日式茶碗蒸"},
+    {"img2":"images/luosi.jpg","text":"爆炒螺蛳"},
+    {"img2":"images/ningmeng.jpg","text":"咖啡柠檬苏打水"},
+    {"img2":"images/honghong.jpg","text":"红烧肉"},
+    {"img2":"images/xiaochao.jpg","text":"缤纷小炒"},
+    {"img2":"images/niurou.jpg","text":"咖喱牛肉汤"},
+    {"img2":"images/luobo.jpg","text":"香辣豆豉萝卜干"},
+    {"img2":"images/dangao.jpg","text":"酥梨蓝莓奶酪蛋糕"},
+    {"img2":"images/mocha.jpg","text":"抹茶小山卷"},
+    {"img2":"images/hongdou.jpg","text":"墨西哥红豆包"}
+  ]
+}

@@ -1,0 +1,48 @@
+<ion-view view-title="忘记密码" class="changePwd forgetPwd"  hide-nav-bar="true">
+    <ion-header-bar class="header_color">
+        <a ui-sref="set"><i class="icon ion-chevron-left"></i> <span>找回密码</span></a>
+    </ion-header-bar>
+    <ion-content class="cont_bg">
+        <form name="registerForm" novalidate>
+            <div class="list list-inset">
+                <div class="item-input item">
+                    <span class="input-label">电话</span>
+                    <input type="text" name="password1" ng-model="password1" required>
+                </div>
+            </div>
+            <div class="list list-inset">
+                <div class="item-input item">
+                    <span class="input-label">验证码</span>
+                    <input type="text">
+                    <span class="badge badge-assertive" ng-click="changeText()">{{text}}</span>
+                </div>
+            </div>
+            <div class="list list-inset">
+                <div class="item-input item" style="border:none" id="password-group">
+                    <label for="password" class="input-label">新密码</label>
+                    <input type="password" class="form-control" ng-model="password" ng-minlength="6" ng-maxlength="20" name="password" id="password" required>
+                </div>
+                <p class="showPassword">
+                        <span style="color: red;" ng-show="registerForm.password.$invalid">
+                            <span ng-show="registerForm.password.$error.minlength">*密码长度不小于6</span>
+                            <span ng-show="registerForm.password.$error.maxlength">*密码长度不超过20</span>
+                        </span>
+                </p>
+            </div>
+            <div class="list list-inset newPwd">
+                <div class="item-input item" style="border:none" id="passwordagaingroup">
+                    <label for="passwordagain" class="input-label">确认新密码</label>
+                    <input type="password"class="form-control" ng-model="passwordagain" name="passwordagain"
+                           id="passwordagain" required>
+                </div>
+                <p class="showPassword">
+                    <span style="color: red" ng-show="registerForm.password.$valid">
+                        <span ng-show="passwordagain!=password">*两次密码输入不一致</span>
+                    </span>
+                </p>
+            </div>
+        </form>
+        <p class="rulePwd">密码长度至少6个字符，最多32个字符</p>
+        <div class="button button-full button-balanced" ng-disabled="registerForm.email.$invalid || registerForm.name.$invalid || registerForm.password.$invalid || password != passwordagain" ui-sref="tabs.home">提交</div>
+    </ion-content>
+</ion-view>

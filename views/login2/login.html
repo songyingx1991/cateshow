@@ -1,0 +1,23 @@
+<ion-view title="登录" class="changePwd lodgin" hide-nav-bar="true">
+    <ion-header-bar class="header_color">
+        <a ui-sref="tabs.me"><i class="icon ion-chevron-left"></i> <span>登录</span></a>
+    </ion-header-bar>
+    <ion-content class="cont_bg">
+        <form name="registerForm" novalidate>
+            <div class="list list-inset">
+                <div class="item-input item">
+                    <span class="input-label">用户名</span>
+                    <input type="text" name="text" ng-model="text" required>
+                </div>
+            </div>
+            <div class="list list-inset">
+                <div class="item-input item">
+                    <span class="input-label">密码</span>
+                    <input type="password" name="password" ng-model="password" required>
+                </div>
+            </div>
+            <div class="button button-full button-balanced login_btn" ui-sref="tabs.my" ng-disabled="registerForm.$invalid" ng-click="toggler()">登录</div>
+            <p class="forgetPwd" ui-sref="forgetPwd">忘记密码？</p>
+        </form>
+    </ion-content>
+</ion-view>

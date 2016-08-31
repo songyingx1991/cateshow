@@ -1,0 +1,17 @@
+<ion-view id="menu" hide-tabs="true" view-title="菜谱">
+    <ion-header-bar class="menucls">
+            <a ui-sref="tabs.home"><i class="icon ion-chevron-left"></i></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list list-borderless menu-list">
+            <a class="item item-thumbnail-left" ng-repeat="green in menu.data" href="#tabs/menu/{{green.id}}">
+                    <img ng-src="{{green.albums[0]}}"/>
+                    <div class="cont">
+                        <h3>{{green.title}}</h3>
+                        <h5>{{green.tags}}</h5>
+                    </div>
+            </a>
+        </div>
+        <ion-infinite-scroll on-infinite="buttomrefresh()" distance="1%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

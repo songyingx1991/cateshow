@@ -1,0 +1,83 @@
+<ion-view class="home">
+    <ion-nav-title class="item-input-inset homeTitle">
+        <div class="homeLogo">美食show</div>
+        <label class="item-input-wrapper">
+            <i class="icon ion-search col-10"></i>
+            <input type="text" placeholder="searching"/>
+        </label>
+        <div class="button button-clear address"><span>成都</span><i class="icon ion ion-ios-location-outline" style="font-size:10px;margin-left:3px;"></i></div>
+    </ion-nav-title>
+    <ion-content>
+        <ion-slide-box auto-play="true" slide-interval="2000" does-continue="true" class="slide">
+            <ion-slide>
+                <div class="slidePic"><a href="javascript:;"><img src="images/laobing.jpg"><img src="images/shucaizhou.jpg"><p>早餐</p></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slidePic"><a href="javascript:;"><img src="images/rourou.jpg"><img src="images/paigutang1.jpg"><p>午餐</p></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slidePic"><a href="javascript:;"><img src="images/huangyougan.jpg"><img src="images/kaojimihua.jpg"><p>下午茶</p></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slidePic"><a href="javascript:;"><img src="images/hpongshaodou.jpg"><img src="images/doujiao.jpg"><p>晚餐</p></a></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="icons">
+            <ul>
+                <li><a href="javascript:;"><img src="images/tubiaos_07.png" ui-sref="tabs.menu"><p>早餐</p></a></li>
+                <li><a href="javascript:;"><img src="images/tubiaos_33.png" ui-sref="tabs.menu"><p>午餐</p></a></li>
+                <li><a href="javascript:;"><img src="images/tubiaos_15.png" ui-sref="tabs.menu"><p>下午茶</p></a></li>
+                <li><a href="javascript:;"><img src="images/tubiaos_32.png" ui-sref="tabs.menu"><p>晚餐</p></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="sort">
+            <ul>
+                <li class="fl"><a href="javascript:;"><img src="images/paihangbang.png" ui-sref="tabs.menu"></a></li>
+                <li class="fr"><a href="javascript:;"><img src="images/zhinengzucai.png"></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="desc">最热商品</div>
+        <ion-slide-box auto-play="true" slide-interval="3000" does-continue="true" class="slides">
+            <ion-slide>
+                <div class="slidePics"><a href="#"><img src="images/guo.jpg"></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slidePics"><a href="#"><img src="images/bingyuebing.jpg"></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slidePics"><a href="#"><img src="images/chihuo.jpg"></a></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="hot">
+            <ul ng-repeat="hotsort in hotsorts">
+                <li class="fl"><a href="#tabs/menu/116"><img ng-src="{{hotsort.img1}}"><h4>{{hotsort.text}}</h4><p>{{hotsort.price}}<span>/{{hotsort.number}}</span></p></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="tuijian">
+            <p>今日推荐</p>
+            <a href="javascript:;"><img src="images/yancais.jpg"></a>
+            <a href="javascript:;"><img src="images/xiazi.jpg"></a>
+            <a href="javascript:;"><img src="images/weide.jpg"></a>
+            <a href="javascript:;"><img src="images/mifan.jpg"></a>
+        </div>
+        <ion-slide-box auto-play="true" slide-interval="2000" does-continue="true" class="slide3">
+            <ion-slide>
+                <div class="slidePics3"><a href="javascript:;"><img src="images/dachu.jpg"></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slidePics3"><a href="javascript:;"><img src="images/suannai.jpg"></a></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="guess">
+            <div class="text"><img src="images/like.png" class="fl"><p class="fl">猜你喜欢</p></div>
+            <div class="clear"></div>
+            <ul ng-repeat="likesort in likesorts">
+                <li><a href="javascript:;"><img ng-src="{{likesort.img2}}"></a><p>{{likesort.text}}</p></li>
+                <!--<li><a href="javascript:;"><img src="images/yinhua.jpg"></a><p>#樱花#紫薯花生仁</p></li>-->
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>

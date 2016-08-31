@@ -1,0 +1,12 @@
+<ion-view id="step" hide-tabs="true">
+   <!-- <ion-header-bar class="stepcls" >
+        <a ui-sref="tabs.menu"><i class="icon ion-chevron-left"></i></a>
+    </ion-header-bar>-->
+        <ion-nav-title>{{newstep.data.title}}</ion-nav-title>
+    <ion-content>
+        <div class="list step-css" ng-repeat="process in newstep.data.steps">
+            <p>{{process.step}}</p>
+            <img ng-src="{{process.img}}"/>
+        </div>
+    </ion-content>
+</ion-view>
