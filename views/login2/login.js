@@ -1,7 +1,7 @@
 /**
  *
  */
-angular.module("myapp").controller("login2Ctrl",function($scope,$location,$rootscope){
+angular.module("myapp").controller("login2Ctrl",function($scope,$location,$rootScope){
     $scope.link=function(registerForm){
         if(registerForm.$invalid){
             $location.path("login");
@@ -20,11 +20,10 @@ angular.module("myapp").controller("login2Ctrl",function($scope,$location,$roots
         console.log('1')
     };
 
-    $scope.tog={};
-    $scope.tog.que1=false;
-    $scope.que1=false;
+    $rootScope.tog={};
+    $rootScope.tog.que1=false;
 
     $scope.toggler=function(){
-        $rootscope.que1=true;
+        $rootScope.tog.que1=true;
     }
 });
